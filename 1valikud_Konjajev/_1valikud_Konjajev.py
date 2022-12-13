@@ -1,3 +1,49 @@
+from math import *
+from random import * 
+
+#Määrata ja tuletada suurem kahest sisestatavast arvust.
+print("Määrata ja tuletada suurem kahest sisestatavast arvust")
+a=randint(-100,100)
+b=randint(-100,100)
+print(f"a={a}\nb={b}")
+if a>b:
+    print(f"arv {a} on suurem arv {b}")
+elif b>a:
+    print(f"arv {b} on suurem arv (a)")
+
+print()
+
+
+#Isikukoodi kontrollimine
+print("Isikukoodi kontrollimine")
+text=input("Palun kirjuta teie isikukod: ")
+n=len(text)
+if n==11 and text.isdigit(): 
+    print("Teie hagikood on sisestatud õigesti")
+else:
+    print("iskukoodis lubamatud väärtused!")
+
+print()
+
+
+#13/12/22
+r=randint(-100,100)
+a=randint(-100,100)
+print(f"r={r}\na={a}")
+if r>0 and a>0:
+    Skv=a**2
+    Skr=pi*r**2
+    if Skv>Skr: 
+       print(f"Rudu pindala {Skv} m^2 on suurem ringi pindala {Skr} m^2")
+    elif Skr>Skv:
+       print(f"Rindi pindala {Skr} m^2 on suurem ruudu pindala {Skv} m^2")
+    else:
+       print("Pindala ov võrsed. {Skr} m^2")
+else:
+    print(f"{a} ja {r} peavad > kui 0 olla")
+print()
+
+
 #2 версия только лучш чем "2"
 print("Nädalapäevad")
 try:
@@ -21,6 +67,8 @@ try:
     print(n)
 except:
     print("Viga")
+
+
 #2
 try:
     päev=int(input("Mis päev täna on?"))
