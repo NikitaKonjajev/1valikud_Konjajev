@@ -1,5 +1,59 @@
+from random import *
 from math import *
-from random import * 
+
+
+#Работа Артема М
+try: 
+    vanus=int(input("Kui vana sa oled? "))
+    if vanus>=18:
+        print("Kas te annate vanematele loa oma Tahvelit vaadata?")
+        o=(input("Jäh või Ei. "))
+        if o.lower()=="jäh":
+            print({o})
+            print("See on ligipääs teie vanematele.")
+            print("Tahvel on kinni. ")
+        elif o.upper()=="EI":
+            print("sissepääs puudb.")
+            print("Tahvel on kinni. ")
+    if vanus <18:
+        print("Juurdepääs vanematele on automaatselt antud. ")
+except:
+    print("Tahvel on kinni")
+print()
+
+
+#Работа Лехи
+try:
+    päev=int(input("Mis päev ja  itu tundi täna on?"))
+    if päev==1:
+        n="Esmaspäev"
+        n="6 tundi"
+    elif päev==2:
+        n="Teisipäev"
+        n="8 tundi"
+    elif päev==3:
+        n="Kolmapäev"
+        n="6 tundi"   
+    elif päev==4:
+        n="Neljapäev"
+        n="5 tundi" 
+    elif päev==5:
+        n="Reede"
+        n="7 tundi"
+    elif päev==6:
+        n="Laupäev"
+        n="0 tundi"
+    elif päev==6:
+        n="Pühapäev"
+        n="0 tundi"
+    else: 
+        n="vale number"
+    print(n)
+except:
+    print("!!!!!!!!")
+
+    print()
+
 
 #Määrata ja tuletada suurem kahest sisestatavast arvust.
 print("Määrata ja tuletada suurem kahest sisestatavast arvust")
@@ -9,7 +63,7 @@ print(f"a={a}\nb={b}")
 if a>b:
     print(f"arv {a} on suurem arv {b}")
 elif b>a:
-    print(f"arv {b} on suurem arv (a)")
+    print(f"arv {b} on suurem arv {a}")
 
 print()
 
@@ -109,4 +163,7 @@ else:
     print("Viga!")
 
 
-
+a=6
+b=4
+a=2*a+3*b 
+b=a/2*b
